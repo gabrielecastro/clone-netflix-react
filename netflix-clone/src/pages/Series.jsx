@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar";
 import { useRef } from 'react';
 import Serie from "../data/serie";
 
@@ -21,7 +20,6 @@ function Series() {
 
     return (
       <div>
-        <NavBar />
         <main>
         <div class="main-movie main-serie">
           <div class="container-main-movie">

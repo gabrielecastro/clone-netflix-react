@@ -1,4 +1,3 @@
-import NavBar from "../components/NavBar";
 import { useRef } from 'react';
 
 import { VscChevronLeft ,VscChevronRight } from "react-icons/vsc";
@@ -21,7 +20,6 @@ function Movies() {
 
     return (
       <div>
-        <NavBar />
         <main>
         <div class="main-movie main-movie-2">
           <div class="container-main-movie">

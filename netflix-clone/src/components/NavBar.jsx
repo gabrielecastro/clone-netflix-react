@@ -20,12 +20,6 @@ class NavBar extends Component {
               <li>
                 <NavLink className="header-nav-link" exact activeClassName="active" to="/movies">Filmes</NavLink>
               </li>
-              <li>
-                <NavLink className="header-nav-link" exact activeClassName="active" to="/">Bombando</NavLink>
-              </li>
-              <li>
-                <NavLink className="header-nav-link" exact activeClassName="active" to="/">Minha Lista</NavLink>
-              </li>
             </ul>
           </nav>
         </div>
