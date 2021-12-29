@@ -153,6 +153,7 @@ header nav {
 
 .container .carousel .item .image img {
   width: 200px;
+  height: 300px;
   margin-right: 0px;
   object-fit: cover;
 }

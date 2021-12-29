@@ -1,7 +1,7 @@
-import Series from '../data/series';
 import { useRef } from 'react';
 
 import { VscChevronLeft ,VscChevronRight } from "react-icons/vsc";
+import Main from '../data/main';
 
 function Carousel() {
 
@@ -22,10 +22,10 @@ function Carousel() {
       <section>
           <div className="container">
             <div className="title">
-              <h3>Séries</h3>
+              <h3>Em alta</h3>
             </div>
             <div className="carousel" ref={ carousel }>
-              {Series.map((item) => (
+              {Main.map((item) => (
                 <div className="item">
                   <div className="image">
                     <img src={item.image} alt={item.name} />
