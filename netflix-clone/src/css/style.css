@@ -51,9 +51,9 @@ header nav {
   margin-right: 15px;
 }
 
-/* .active {
+.active {
   color: white
-} */
+}
 
 /* filme principal */
 
@@ -198,6 +198,7 @@ header nav {
 .main-serie {
   background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capaserie.jpg);
   height: 800px;
+  width: 100%;
 }
 
 
