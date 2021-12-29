@@ -158,7 +158,7 @@ header nav {
   object-fit: cover;
 }
 
-.container .title {
+.container .title{
   display: flex;
   flex-direction: column;
   margin-top: -90px;
@@ -184,4 +184,30 @@ header nav {
   font-weight: bold
 }
 
+/* series */
 
+.container-2 .title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-bottom: -10px;
+  font-size: 18px;
+}
+
+.main-serie {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capaserie.jpg);
+  height: 800px;
+}
+
+
+.container-2 .title-2{
+  margin-top: -100px;
+}
+
+/* filmes */
+
+.main-movie-2 {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capamovie.jpg);
+  width: 100%;
+}

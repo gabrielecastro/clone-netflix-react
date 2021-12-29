@@ -15,7 +15,7 @@ import sweet from '../img/series/sweet.jpg';
 import winx from '../img/series/winx.jpg';
 import bridgerton from '../img/series/bridgerton.jpg';
 
-const Series = [
+const Serie = [
   { name: 'The Witcher', image: thewicher },
   { name: 'La Casa de Papel', image: lacasadepapel },
   { name: 'Emily em Paris', image: emilyemparis },
@@ -34,4 +34,4 @@ const Series = [
   { name: 'You', image: you },
 ];
 
-export default Series;
+export default Serie;

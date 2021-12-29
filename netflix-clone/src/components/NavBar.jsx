@@ -6,17 +6,19 @@ class NavBar extends Component {
     return (
       <header>
         <div id="container-header">
+          <NavLink className="header-nav-link" exact activeClassName="active" to="/">
           <h2 id="logo">NETFLIX</h2>
+          </NavLink>
           <nav>
             <ul>
               <li>
                 <NavLink className="header-nav-link" exact activeClassName="active" to="/">Incício</NavLink>
               </li>
               <li>
-                <NavLink className="header-nav-link" exact activeClassName="active" to="/">Séries</NavLink>
+                <NavLink className="header-nav-link" exact activeClassName="active" to="/series">Séries</NavLink>
               </li>
               <li>
-                <NavLink className="header-nav-link" exact activeClassName="active" to="/">Filmes</NavLink>
+                <NavLink className="header-nav-link" exact activeClassName="active" to="/movies">Filmes</NavLink>
               </li>
               <li>
                 <NavLink className="header-nav-link" exact activeClassName="active" to="/">Bombando</NavLink>
