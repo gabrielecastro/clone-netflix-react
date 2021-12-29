@@ -70,6 +70,13 @@ header nav {
 
 .buttons {
   margin-top: 50px;
+  display: flex;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -83,21 +90,36 @@ header nav {
 }
 
 .button {
-  background-color:  rgba(255,255,255,.70);
+  background-color:  rgba(255,255,255,.30);
   border: none;
   padding: 13px;
   margin-right: 7px;
   cursor: pointer;
   transition: .3s ease all;
   border-radius: 3px;
-  
+  text-decoration: none;
+  color: white;
+  font-weight: bold
 }
 
 .button:hover {
-  background-color: rgba(255,255,255,.30);
+  background-color: rgba(255,255,255,.20);
 }
 
 .container-main-movie {
   margin-left: 30px;
   width: 50%;
+}
+
+.button-1 {
+  background-color: white;
+  color: #141414;
+}
+
+.button-1:hover {
+  background-color: rgba(255,255,255,.70);
+}
+
+.icons {
+  margin-right: 5px;
 }
