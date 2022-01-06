@@ -59,13 +59,29 @@ header nav {
 
 .main-movie {
   font-size: 16px;
-  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capa.jpg);
   height: 600px;
-  background-size:cover;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* Capas da main-movie */
+
+.main-movie-film {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capamovie.jpg);
+  background-size: cover;
+}
+
+.main-movie-serie {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capaserie.jpg);
+  background-size: cover;
+}
+
+.main-movie-home {
+  background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(/src/img/capa.jpg);
+  background-size: cover;
+  
 }
 
 .buttons {
