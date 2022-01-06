@@ -4,16 +4,17 @@ import { AiFillCaretRight, AiOutlineExclamationCircle } from "react-icons/ai";
 
 class MainMovie extends Component {
   render() { 
+    const { title, sinopse, linkTrailer, linkInfos, mainMovie } = this.props;
     return (
       <main>
-        <div class="main-movie">
-          <div class="container-main-movie">
-            <h3 class="title">Perdidos no Espaço</h3>
-            <p class="sinopse">Após um pouso forçado em um planeta desconhecido, a família Robinson tenta sobreviver aos perigos que encontra neste novo mundo.</p>
-            <div class="buttons">
+        <div className={ mainMovie }>
+          <div className="container-main-movie">
+            <h3 className="title">{ title }</h3>
+            <p className="sinopse">{ sinopse }</p>
+            <div className="buttons">
               <a
                 class="button button-1"
-                href="https://youtu.be/GYn4r6nV0tw"
+                href={ linkTrailer }
                 target="_blank" rel="noreferrer"
               >
                 <span className="icons"><AiFillCaretRight /></span>
@@ -21,7 +22,7 @@ class MainMovie extends Component {
               </a>
               <a
                 class="button"
-                href="https://www.themoviedb.org/tv/75758-lost-in-space?language=pt-BR"
+                href={ linkInfos }
                 target="_blank" rel="noreferrer"
               >
                 <span className="icons"><AiOutlineExclamationCircle /></span>

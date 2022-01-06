@@ -1,9 +1,8 @@
 import { useRef } from 'react';
 
 import { VscChevronLeft ,VscChevronRight } from "react-icons/vsc";
-import Main from '../data/main';
 
-function Carousel() {
+function Carousel(props) {
 
   const carousel = useRef(null);
 
@@ -22,10 +21,10 @@ function Carousel() {
       <section>
           <div className="container">
             <div className="title">
-              <h3>Em alta</h3>
+              <h3>{props.title}</h3>
             </div>
             <div className="carousel" ref={ carousel }>
-              {Main.map((item) => (
+              {props.type.map((item) => (
                 <div className="item">
                   <div className="image">
                     <img src={item.image} alt={item.name} />
