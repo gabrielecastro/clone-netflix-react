@@ -150,6 +150,8 @@ header nav {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+  margin: 10px;
+  padding: 10px;
 }
 
 .container .carousel::-webkit-scrollbar {
@@ -157,20 +159,19 @@ header nav {
 }
 
 .container .carousel .item {
-  margin: 10px;
-  padding: 10px;
   width: 280px;
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: 10px;
-  /* flex: none; */
+  transform: scale(0.95);
+}
+
+.container .carousel .item:hover {
+  transform: scale(1);
 }
 
 .container .carousel .item .image img {
   width: 200px;
   height: 300px;
-  margin-right: 0px;
   object-fit: cover;
 }
 
@@ -199,6 +200,67 @@ header nav {
   color: white;
   font-weight: bold
 }
+
+
+/* cardDeitails */
+
+.cardDeitails {
+  /* background-size: cover; */
+  height: 560px;
+}
+
+.container-card-details {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-card-details {
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.sinopse-card-details {
+  margin-top: 5%;
+  width: 40%;
+  margin-left: -80%;
+}
+
+.buttons-card-details {
+  margin-top: -150px;
+  display: flex;
+  margin-left: 30%;
+}
+
+.buttons-card-details a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-details-image {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+.card-details-image img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.container-sinopse-and-image {
+  display: flex;
+  width: 100%;
+}
+
+
 
 /* series */
 
@@ -233,7 +295,7 @@ header nav {
 
 footer .text-footer {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #AAA;
 }

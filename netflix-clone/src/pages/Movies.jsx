@@ -14,7 +14,7 @@ function Movies() {
       />
       <Carousel 
         title="Filmes" 
-        type={movies}  
+        type={movies}
       />
     </>
   );

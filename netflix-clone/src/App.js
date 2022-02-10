@@ -5,6 +5,7 @@ import Series from './pages/Series';
 import Movies from './pages/Movies';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import CardDetails from './components/CardDetails';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={ Home }></Route>
         <Route exact path="/series" component={ Series }></Route>
         <Route exact path="/movies" component={ Movies }></Route>
+        <Route exact path="/card-details/:id" component={ CardDetails }></Route>
       </Switch>
       <Footer />
     </>
