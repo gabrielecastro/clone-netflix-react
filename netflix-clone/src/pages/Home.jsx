@@ -1,10 +1,8 @@
 import Carousel from '../components/carousel';
 import MainMovie from '../components/MainMovie';
 import Main from '../data/main';
-import getFilms from '../services/filmsAPI';
 
 function Home() {
-  getFilms();
   return (
     <div>
       <MainMovie

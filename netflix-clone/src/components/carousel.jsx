@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 import { VscChevronLeft ,VscChevronRight } from "react-icons/vsc";
 
@@ -27,7 +28,9 @@ function Carousel(props) {
               {props.type.map((item) => (
                 <div className="item">
                   <div className="image">
-                    <img src={item.image} alt={item.name} />
+                    <Link className="link-image-carousel" to={ `card-details/${item.id}` }>
+                      <img src={item.image} alt={item.name} />
+                    </Link>
                   </div>
                 </div>
               ))}
