@@ -26,7 +26,7 @@ function Carousel(props) {
             </div>
             <div className="carousel" ref={ carousel }>
               {props.type.map((item) => (
-                <div className="item">
+                <div key={ item.id } className="item">
                   <div className="image">
                     <Link className="link-image-carousel" to={ `card-details/${item.id}` }>
                       <img src={item.image} alt={item.name} />

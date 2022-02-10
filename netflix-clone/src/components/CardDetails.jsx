@@ -7,6 +7,7 @@ function CardDetails(props) {
   const { movieSelected, setMovieSelected } = useContext(AppContext);
 
   useEffect(() => {
+    console.log(props);
     getMovieSelected()
   }, [])
 
@@ -57,7 +58,7 @@ function CardDetails(props) {
               className="buttons-card-details"
             >
               <a
-                class="button"
+                className="button"
                 href={ item.trailer }
                 target="_blank" rel="noreferrer"
               >
@@ -65,7 +66,7 @@ function CardDetails(props) {
                 Trailer
               </a>
               <a
-                class="button"
+                className="button"
                 href={ item.trailer }
                 target="_blank" rel="noreferrer"
               >
