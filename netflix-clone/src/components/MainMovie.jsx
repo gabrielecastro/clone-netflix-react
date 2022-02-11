@@ -13,7 +13,7 @@ class MainMovie extends Component {
             <p className="sinopse">{ sinopse }</p>
             <div className="buttons">
               <a
-                class="button button-1"
+                className="button button-1"
                 href={ linkTrailer }
                 target="_blank" rel="noreferrer"
               >
@@ -21,7 +21,7 @@ class MainMovie extends Component {
                 Assistir trailer
               </a>
               <a
-                class="button"
+                className="button"
                 href={ linkInfos }
                 target="_blank" rel="noreferrer"
               >

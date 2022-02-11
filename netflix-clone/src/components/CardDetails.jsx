@@ -1,25 +1,26 @@
 import { useContext, useEffect } from "react";
 import { AiFillCaretRight, AiFillHeart } from "react-icons/ai";
 import AppContext from "../context/AppContext";
-import movies from "../data/movies";
+import all from "../data/all";
 
 function CardDetails(props) {
-  const { movieSelected, setMovieSelected } = useContext(AppContext);
+  const { selectedItem, setSelectedItem } = useContext(AppContext);
 
   useEffect(() => {
+    console.log(props);
     getMovieSelected()
   }, [])
 
   function getMovieSelected() {
     const { match: { params: { id } } } = props;
-    const movieSelectedFilter = movies.filter((movie) => movie.id === Number(id) )
-    setMovieSelected(movieSelectedFilter);
+    const selectedItemFilter = all.filter((item) => item.id === Number(id) )
+    setSelectedItem(selectedItemFilter);
   }
 
   return (
     <div>
       {
-        movieSelected.map((item) => (
+        selectedItem.map((item) => (
           <div
             key={ item.id }
             className= 'cardDeitails'
@@ -57,7 +58,7 @@ function CardDetails(props) {
               className="buttons-card-details"
             >
               <a
-                class="button"
+                className="button"
                 href={ item.trailer }
                 target="_blank" rel="noreferrer"
               >
@@ -65,7 +66,7 @@ function CardDetails(props) {
                 Trailer
               </a>
               <a
-                class="button"
+                className="button"
                 href={ item.trailer }
                 target="_blank" rel="noreferrer"
               >

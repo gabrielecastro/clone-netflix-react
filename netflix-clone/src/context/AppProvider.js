@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import AppContext from './AppContext';
 
 function AppProvider({ children }) {
-  const [ movieSelected, setMovieSelected ] = useState([]);
+  const [ selectedItem, setSelectedItem ] = useState([]);
 
   const contextValue = {
-    movieSelected,
-    setMovieSelected,
+    selectedItem,
+    setSelectedItem,
   }
 
   return (
