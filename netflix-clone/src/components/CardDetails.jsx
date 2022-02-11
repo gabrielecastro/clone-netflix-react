@@ -18,7 +18,7 @@ function CardDetails(props) {
   }
 
   return (
-    <div>
+    <div className="container-cardDetails">
       {
         selectedItem.map((item) => (
           <div
